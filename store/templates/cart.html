@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% if not products %}
+    <div class="container">
+    <div class="p-4 m-4 mx-auto">
+        <div class="col-lg-6 mt-4 border border-primary mx-auto rounded pt-4 rounded">
+                <div class="p-2 m-5 text-center col-lg-10  mx-auto ">
+                    <div class="display-8">Wishlist is Empty !</div>
+            </span>
+        </div>
+    </div>
+
+
+{% else %}
+    <div class="container">
+       <div class="border rounded p-4 m-4">
+            <p class="display-4 pl-4 ml-4">Your Wishlist</p>
+            <hr>
+
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>Sno.</th>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Remove </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    {% for product in products %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td><img style="height: 80px;" class="rounded-circle" src="{{product.image.url}}" alt=""></td>
+                        <td>{{product.name}}</td>
+
+                        <td><form action="/cart" class="col-2 mx-auto" method="post">
+								{% csrf_token %}
+								<input hidden type="text" name='product' value='{{product.id}}'>
+								<input hidden type="text" name='remove' value='True'>
+								<input type="submit"  value="x" class="btn btn-block btn-dark btn-lg-4 mx-auto">
+							</form></td>
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="4"></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+       </div>
+    </div>
+
+{% endif %}
+
+{% endblock %}

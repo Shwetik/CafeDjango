@@ -31,12 +31,10 @@ class Index(View):
         return render(request, 'index.html', data)
 
     def post(self, request):
-        # product is the product id selected to add in wishlist
+
         product = request.POST.get('product')
-        remove = request.POST.get('remove')
-        # print(product)
+        #print(product)
         cart = request.session.get('cart')
-        #success_message = 'Added to wishlist'
         if cart:
             cart[product] = 1
         else:
@@ -45,6 +43,6 @@ class Index(View):
         request.session['cart'] = cart
         #print(request.session['cart'])
         return redirect('homepage')
-        #return redirect('homepage')
+
 
 

@@ -11,7 +11,7 @@ A simple Cafe website showcasing products served by the cafe and a functionality
   
 ## Screenshots
 
-- ![App Screenshot](https://postimg.cc/R3b0mHhz)
+- ![App Screenshot](https://i.postimg.cc/4dXHzvTn/snap-4.jpg)
 
 - ![App Screenshot](https://postimg.cc/G9Dp091Z)
 

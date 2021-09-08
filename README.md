@@ -11,13 +11,13 @@ A simple Cafe website showcasing products served by the cafe and a functionality
   
 ## Screenshots
 
-- ![App Screenshot](https://i.postimg.cc/4dXHzvTn/snap-4.jpg)
+![App Screenshot](https://i.postimg.cc/4dXHzvTn/snap-4.jpg)
 
-- ![App Screenshot](https://postimg.cc/G9Dp091Z)
+![App Screenshot](https://i.postimg.cc/RCsJHnpV/snap1.jpg)
 
-- ![App Screenshot](https://postimg.cc/8J2PJgLK)
+![App Screenshot](https://i.postimg.cc/FzRf69z4/snap2.jpg)
 
-- ![App Screenshot](https://postimg.cc/N2RGRC4g)
+![App Screenshot](https://i.postimg.cc/yxbJ4w3S/snap3.jpg)
 
   
 ## Roadmap
